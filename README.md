@@ -10,25 +10,27 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 - **Add records of income and expenses**
 
-(User can add their income or expense respectively and immediately regardless of the time and location)
+(Users can add their income or expense quickly regardless of the time and location)
 
 - **Input basic information with customized message**
 
-(Basic information includes amount, date, types of income or expense(e.g. food, game, clothing, salary, utility expense), account(e.g. cash, bank card, credit card, octopus)
+(Basic information includes amount, date, types of income or expense(e.g. food, game, clothing, salary, utility expense), account(e.g. cash, bank card, credit card, octopus) can be inputted)
 
-(For the customized message, the user can add message for specific record, for instance, the user can label a football as a gift for his son)
+(For the customized message, users can add message for a specific record, for instance, users can label a football as a gift for his son)
 
 - **Delete and edit records**
-US
-(Specific record can be deleted and edited respectively and immediately regardless of the time and location when user wrongly input the data)
+
+(Specific record can be edited or deleted when users find any mistake)
 
 - **View records of specific category or account**
 
-(User can analyze their expenditures on different aspects, including date, type and account. This can help the user to coordinate their spending and help with their money management)
+(Users can analyze their expenditures on different aspects, including date, type and account. This can help users to coordinate their spending and have a better money management)
 
 - **View records that are sorted by date and amount**
 
-(User can sort the records by date to view records in chronological order. Amount can also be sorted to figure out some extrme records.)
+(User can sort the records by date to view records in chronological order)
+
+(Amount can also be sorted to figure out some extrme records.)
 
 - **Search for specific record(s)**
 
@@ -36,7 +38,7 @@ US
 
 - **Read the statistic report of user's financial state**
 
-(statistic report shows monthly income and expenses, percentages of income and expenses of each categories, trend of monthly income, expenditures and assets)
+(Statistic report shows monthly income and expenses, percentages of income and expenses of each categories, trend of monthly income, expenditures and assets)
 
 - **Set a budget plan for the future months**
 
@@ -44,22 +46,21 @@ US
 
 - **Receive notification as a reminder according to the budget plan**
 
-(When the expenditure in the specific category exceed the budget plan, an automatical notification will be generated to remind the user to reduce expenditure in that category and provide some suggestion)
+(When the expenditure in the specific category exceed the budget plan, an automatical notification will be generated to remind the user to reduce expenditure in that category so that long-term financial plan can be maintained)
 
 - **Setting password**
 
-(User can set a password to protect their privacy by accessing the data with authentication if necessary as the financial position should not be easily disclosed to others)
+(Users can set a password to protect their privacy by accessing the data with authentication since the financial position should not be easily disclosed to others)
 
 - **Customize style**
 
-(User can customize the interface by choosing their favourable text color, background color and font size)
+(Users can customize the interface by choosing their favourable text color, background color and font size)
 
 - **Preset those regular income and expenses**
 
-(User can preset regular income, such as working salary since it is constant in a period of time)
+(Users can preset regular income, such as working salary since it is constant in a period of time)
 
-(User can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
+(Users can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
 
 # Reference
-
-https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
+Census and Statistics Department,HKSAR, "Thematic Household Survey Report No. 64" Retrieved from https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
