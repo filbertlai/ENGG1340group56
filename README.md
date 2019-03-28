@@ -16,7 +16,7 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 (Basic information includes amount, date, types of income or expense(e.g. food, game, clothing, salary, utility expense), account(e.g. cash, bank card, credit card, octopus) can be inputted)
 
-(For the customized message, users can add message for a specific record, for instance, users can label a football as a gift for his son)
+(For the customized message, users can add a message for a specific record, for instance, users can label a football as a gift for his son)
 
 - **Delete and edit records**
 
@@ -24,13 +24,13 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 - **View records of specific category or account**
 
-(Users can analyze their expenditures on different aspects, including date, type and account. This can help users to coordinate their spending and have a better money management)
+(Users can analyze their expenditures on different aspects, including date, type, and account. This can help users to coordinate their spending and have better money management)
 
 - **View records that are sorted by date and amount**
 
 (User can sort the records by date to view records in chronological order)
 
-(Amount can also be sorted to figure out some extrme records.)
+(Amount can also be sorted to figure out some extreme records.)
 
 - **Search for specific record(s)**
 
@@ -38,11 +38,11 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 - **Read the statistic report of user's financial state**
 
-(Statistic report shows monthly income and expenses, percentages of income and expenses of each categories, trend of monthly income, expenditures and assets)
+(Statistic report shows monthly income and expenses, percentages of income and expenses of each category, the trend of monthly income, expenditures and assets)
 
 - **Set a budget plan for the future months**
 
-(User can estimate the income and plan the expenditures of each categories in order to carry out the long-term financial planning)
+(User can estimate the income and plan the expenditures of each category in order to carry out the long-term financial planning)
 
 - **Receive notification as a reminder according to the budget plan**
 
@@ -54,13 +54,13 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 - **Customize style**
 
-(Users can customize the interface by choosing their favourable text color, background color and font size)
+(Users can customize the interface by choosing their favorable text color, background color, and font size)
 
-- **Preset those regular income and expenses**
+- **Preset the regular income and expenses**
 
 (Users can preset regular income, such as working salary since it is constant in a period of time)
 
 (Users can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
 
 # Reference
-Census and Statistics Department,HKSAR, "Thematic Household Survey Report No. 64" Retrieved from https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
+Census and Statistics Department, HKSAR, "Thematic Household Survey Report No. 64" Retrieved from https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
