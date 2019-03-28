@@ -4,12 +4,18 @@ Due to technological convergence, online payment is becoming prevalent in the 21
 
 # 2)Problem Setting:
 
-In order to tackle the problem, a program is suggested while there are some aims to be accomplished. 
+In order to tackle the problem, a program is suggested while there are some aims to be accomplished.
+
 Firstly, the app should be highly customizable, ranging from the data input or the style of demonstration. Hence, the program allows editable records as well as customized messages and style of presentation. 
+
 Secondly, the privacy of the user should be protected. Therefore, the program allow user to establish a passcord so that only the user oneself is authoirzed to access the data. 
+
 Thirdly, the program should be intelligent. This is the reason why the program automically notify the user when the expenses violate budget plan and simultaneously give out some suggestions on some designated categories as well as anaylze the budget plan with some calculations. 
+
 Fourthly, user should be able to find out any specific records so the program allows user to view records of specific category or account as well as sorted by date or amount. The user can even search by keywords. 
+
 Fifthly, the user should be able to view the data in detailed. Thus, the program will report real-time balance after each addition of record. A complete statistic report will also be generated under request which includes monthly income and expenses, percentages of income and expenses of each category, the trend of monthly income, expenditures and assets. 
+
 Lastly, the program should able to help the user in some long-term plans or targets so the program allows user to preset some regular income or expenses. What is more, user can set a budget plan for the future.
 
 **Features:**
