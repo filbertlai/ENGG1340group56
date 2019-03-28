@@ -76,4 +76,4 @@ Lastly, the program should able to help the user in some long-term plans or targ
 
 **Assumptions**
 
--**There is only one person using the program**
+- **There is only one person using the program**
