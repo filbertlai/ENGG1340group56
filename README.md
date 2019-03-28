@@ -1,8 +1,11 @@
 # 1)Problem Statement:
-Smartphone plays an indispensable role in assisting our lives in the 21st century due to technological convergence. People are getting used to the apps in the phone to assist them, such as the calculator, map, music player. Simultaneously, people can complete their payment easily as the online payment is becoming prevalent, for example, O! ePay, Payme and Paypal. This make them spend more than they thought on account of the unwareness of the amount of money they spent. 
+Due to technological convergence, online payment is becoming prevalent in the 21st century. Yet, customers today can make payment by just having a few clicks in the mobile phone with the use of online wallets or credit cards. The apps specializing online payment like O! ePay, Payme and Paypal even make online payment much faster and easier; in addition, iOs and Andriod had issued Apple Pay and Andriod Pay for users to connect their credit cards to the phone so that they can use their phone like an otopus card – they can make payment in retail stores by just scanning their phone. These have made online payment convenient and that users may not recognize how much they spend, resulting in a overuse of money in light of the lack of awareness on the amount of money they spent.
 
 
 # 2)Problem Setting:
+
+Smartphone plays an indispensable role in assisting our lives in the 21st century due to technological convergence. In Hong Kong, there are around 568 million smarphone users in 2018, indicating that the penetration of smartphone have reached 88.6% (Census and Statistics Department,2018). Users are familiar with using the tools of the mobile phone to assit their daily life and this includes calculator, map, music player and light bulb. Thereby, it is suggested that a tool that allow users to better manage their money and financial status could help with the problem of overuse of money since using a tool that can easily accessed by smartphone can be convenient to users.
+
 - **Add records of income and expenses**
 
 (User can add their income or expense respectively and immediately regardless of the time and location)
