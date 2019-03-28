@@ -74,6 +74,6 @@ Lastly, the program should able to help the user in some long-term plans or targ
 
 (Users can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
 
-**Assumptions**
+**Assumptions:**
 
 - **There is only one person using the program**
