@@ -57,3 +57,7 @@ US
 (User can preset regular income, such as working salary since it is constant in a period of time)
 
 (User can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
+
+# Reference
+
+https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
