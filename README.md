@@ -10,7 +10,7 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 - **Add records of income and expenses**
 
-(Users can add their income or expense quickly regardless of the time and location)
+(Users can add their income or expense quickly regardless of the time and location, real-time balance will be shown, notification will also be sent if it is not consistent with the budget plan)
 
 - **Input basic information with customized messages**
 
@@ -42,7 +42,7 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 - **Set a budget plan for the future months**
 
-(User can estimate the income and plan the expenditures of each category in order to carry out the long-term financial planning)
+(User can estimate the income and plan the expenditures of each category in order to carry out the long-term financial planning, some calculation will also be shown, such as the average daily budget)
 
 - **Receive notification as a reminder according to the budget plan**
 
@@ -63,4 +63,4 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 (Users can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
 
 # Reference
-Census and Statistics Department, HKSAR, "Thematic Household Survey Report No. 64" Retrieved from https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
+Census and Statistics Department, HKSAR, "Thematic Household Survey Report No. 64", Retrieved from https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
