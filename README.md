@@ -1,5 +1,5 @@
 # 1)Problem Statement:
-Due to technological convergence, online payment is becoming prevalent in the 21st century. Yet, customers, today can make payment by just having a few clicks in the mobile phone with the use of online wallets or credit cards. The apps specializing online payment like O! ePay, Payme, and Paypal even make online payment much faster and easier; in addition, iOs and Andriod had issued Apple Pay and Andriod Pay for users to connect their credit cards to the phone so that they can use their phone like an octopus card – they can make payment in retail stores by just scanning their phone. These have made online payment convenient and that users may not recognize how much they spend, resulting in overuse of money in light of the lack of awareness on the amount of money they spent.
+Due to technological convergence, online payment is becoming prevalent in the 21st century. Yet for the customers, they can make payment by just having a few clicks in the mobile phone with the use of online wallets. The apps specializing online payment like O! ePay, Payme, and Paypal even make online payment much faster and easier. In addition, ios and Android had introduced Apple Pay and Google Pay for users to tie their credit cards to the phone so that they can pay with their phone contactlessly in retail stores by just tapping their phones to the terminal. These have made online payment convenient and users may hence not remember how much they spent, resulting in overusing of money in light of the lack of awareness on the amount of money they spent.
 
 
 # 2)Problem Setting:
@@ -12,7 +12,7 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 
 (Users can add their income or expense quickly regardless of the time and location)
 
-- **Input basic information with customized message**
+- **Input basic information with customized messages**
 
 (Basic information includes amount, date, types of income or expense(e.g. food, game, clothing, salary, utility expense), account(e.g. cash, bank card, credit card, octopus) can be inputted)
 
