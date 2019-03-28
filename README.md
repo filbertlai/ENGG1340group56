@@ -4,7 +4,8 @@ Due to technological convergence, online payment is becoming prevalent in the 21
 
 # 2)Problem Setting:
 
-Smartphone plays an indispensable role in assisting our lives in the 21st century due to technological convergence. In Hong Kong, there are around 568 million smartphone users in 2018, indicating that the penetration of smartphone has reached 88.6% (Census and Statistics Department, 2018). Users are familiar with using the tools of the mobile phone to assist their daily life and this includes the calculator, map and music player. Thereby, a tool is suggested that allows users to better manage their money and financial status so it could help with the problem of overusing money since using the tool can easily be accessed by smartphone which is convenient to users.
+In order to tackle the problem, a program is suggested where there is some aims to be accomplished. Firstly, the app can be highly customizable, ranging from the data input or the style of demonstration. Hence, the program allows editable records as well as customized message and style. Secondly, the privacy of the user should be protected. Therefore, the program allow user to establish a passcord so that only the user oneself is authoirzed to access the data. Thirdly, the program should be intelligent. This is the reason why the program automically notify the user when the expenses violate budget plan, give out some suggestions on some designated categories and anaylze the budget plan with calculation. Fourthly, user should be able to find out any specific records so the program
+allows user to view records of specific category or account as well as sorted by date or amount. The user can even search by keywords. Fifthly, the user should able to view the data in detailed. Thus, the program will report real-time balance after each addition of record. A complete statistic report will also be generated under request which includes monthly income and expenses, percentages of income and expenses of each category, the trend of monthly income, expenditures and assets. Lastly, the program should able to help the user in some long-term plans or targets so the program allows user to preset some regular income or expenses. What is more, user can set a budget plan for the future.
 
 **Features:**
 
@@ -61,6 +62,3 @@ Smartphone plays an indispensable role in assisting our lives in the 21st centur
 (Users can preset regular income, such as working salary since it is constant in a period of time)
 
 (Users can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
-
-# Reference
-Census and Statistics Department, HKSAR, "Thematic Household Survey Report No. 64", Retrieved from https://www.statistics.gov.hk/pub/B11302642018XXXXB0100.pdf 
