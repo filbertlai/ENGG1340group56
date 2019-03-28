@@ -4,7 +4,7 @@ Due to technological convergence, online payment is becoming prevalent in the 21
 
 # 2)Problem Setting:
 
-Smartphone plays an indispensable role in assisting our lives in the 21st century due to technological convergence. In Hong Kong, there are around 568 million smartphone users in 2018, indicating that the penetration of smartphone has reached 88.6% (Census and Statistics Department,2018). Users are familiar with using the tools of the mobile phone to assist their daily life and this includes the calculator, map, music player, and light bulb. Thereby, it is suggested that a tool that allows users to better manage their money and financial status could help with the problem of overuse of money since using a tool that can easily be accessed by smartphone can be convenient to users.
+Smartphone plays an indispensable role in assisting our lives in the 21st century due to technological convergence. In Hong Kong, there are around 568 million smartphone users in 2018, indicating that the penetration of smartphone has reached 88.6% (Census and Statistics Department, 2018). Users are familiar with using the tools of the mobile phone to assist their daily life and this includes the calculator, map and music player. Thereby, a tool is suggested that allows users to better manage their money and financial status so it could help with the problem of overusing money since using the tool can easily be accessed by smartphone which is convenient to users.
 
 **Features:**
 
