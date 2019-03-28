@@ -6,6 +6,8 @@ Due to technological convergence, online payment is becoming prevalent in the 21
 
 Smartphone plays an indispensable role in assisting our lives in the 21st century due to technological convergence. In Hong Kong, there are around 568 million smarphone users in 2018, indicating that the penetration of smartphone have reached 88.6% (Census and Statistics Department,2018). Users are familiar with using the tools of the mobile phone to assit their daily life and this includes calculator, map, music player and light bulb. Thereby, it is suggested that a tool that allow users to better manage their money and financial status could help with the problem of overuse of money since using a tool that can easily accessed by smartphone can be convenient to users.
 
+**Features:**
+
 - **Add records of income and expenses**
 
 (User can add their income or expense respectively and immediately regardless of the time and location)
