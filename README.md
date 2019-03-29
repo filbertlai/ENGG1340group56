@@ -77,3 +77,5 @@ Lastly, the program should be able to help the user in achieveing some long-term
 **Assumptions:**
 
 - **There is only one person using the program**
+
+- **The program is for personal use**
