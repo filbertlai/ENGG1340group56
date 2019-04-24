@@ -3,4 +3,6 @@
 #include <iomanip>
 using namespace std;
 
-def int add()
+void add(){
+  cout<<
+}
