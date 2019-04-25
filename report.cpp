@@ -4,44 +4,12 @@ using namespace std;
 
 int main()
 {
-    //input text files to add income and expense to income_sum and expense_sum respectively
-    
-    
-    double income_sum,expense_sum;
-    cout<<"XXXXX Welcome to the statistic report of your financial state XXXXX"<<endl;
-    cout<<"Your monthly income in the current month: "<<income_sum<<endl;
-    cout<<"Your monthly expenses in the current month: "<<expense_sum<<endl;
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly income in :"<<;
-    cout<<"The percentage of in your total income is :"<<<<"%";
-    cout<<"Your monthly expense in :"<<;
-    cout<<"Your monthly expense in :"<<;
-    cout<<"Your monthly expense in :"<<;
-    cout<<"Your monthly expense in :"<<;
-    cout<<"Your monthly expense in :"<<;
-    cout<<"Your monthly expense in :"<<;
-    cout<<"Your monthly expense in :"<<;
+    ifstream fin;
+    double income_sum=0,expense_sum=0;
+    int pos_open,pos_close;
+    fin.open("income.txt");
+    if(fin.fail()){cout<<"Error in file opening!"<<endl;exit(1);}
+    string line;
+    while(getline(fin,line)){pos_open=line.find('$'+1),income_sum+=stoi(line.substr(pos_open))}
+    cout<<income_sum;
 }
