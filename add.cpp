@@ -2,7 +2,6 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
-#include "start.h"
 using namespace std;
 
 void add() {
@@ -34,6 +33,7 @@ void add() {
 			cout << "Invalid day! Please input again. Day: ";
 			cin >> Day;
 		}
+		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Basic Salary" << endl;
 		cout << "2.Bonus" << endl;
@@ -110,6 +110,7 @@ void add() {
 		cout << "8.Gifts" << endl;
 		cout << "9.Others" << endl;
 		cout << "Please indicate your choice in 1-9: ";
+		cin >> num_of_categories;
 		while ((num_of_categories > 9) || (num_of_categories < 1)) {
 			cout << "Incorrect number!Please input a number from 1 to 9: ";
 			cin >> num_of_categories;
@@ -117,6 +118,7 @@ void add() {
 		char type;
 		switch (num_of_categories) {
 		case 1:
+			cout << setfill('x') << setw(50) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Internet" << endl;
 			cout << "b)Mobile phone" << endl;
@@ -145,6 +147,7 @@ void add() {
 			catergories = "Transport";
 			break;
 		case 3:
+			cout << setfill('x') << setw(50) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Medical/Dental" << endl;
 			cout << "b)Beauty/Fitness" << endl;
@@ -166,6 +169,7 @@ void add() {
 			}
 			break;
 		case 4:
+			cout << setfill('x') << setw(50) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Breakfast" << endl;
 			cout << "b)Lunch" << endl;
@@ -195,6 +199,7 @@ void add() {
 			}
 			break;
 		case 5:
+			cout << setfill('x') << setw(50) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Entertainments" << endl;
 			cout << "b)Celebrations" << endl;
@@ -220,6 +225,7 @@ void add() {
 			}
 			break;
 		case 6:
+			cout << setfill('x') << setw(50) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Household goods" << endl;
 			cout << "b)Health supplements" << endl;
