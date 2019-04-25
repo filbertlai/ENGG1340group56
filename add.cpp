@@ -11,8 +11,6 @@ void add() {
 		cout << "Income or Expense? Please type in I or E" << endl;
 		cin >> choice;
 	}
-	
-	//For income:
 	if (choice == 'I') {
 		string catergories, description;
 		int Year, Month, Day, num_of_categories;
@@ -55,7 +53,7 @@ void add() {
 		switch (num_of_categories) 
 		{
 		case 1:
-			catergories = "Basic Salary";
+			catergories = "BasicSalary";
 			break;
 		case 2:
 			catergories = "Bonus";
@@ -64,13 +62,13 @@ void add() {
 			catergories = "Investment";
 			break;
 		case 4:
-			catergories = "Pocket Money";
+			catergories = "PocketMoney";
 			break;
 		case 5:
 			catergories = "Gifts";
 			break;
 		case 6:
-			catergories = "Lottery prizes";
+			catergories = "LotteryPrizes";
 			break;
 		}
 		cout << "Description:";
@@ -82,7 +80,7 @@ void add() {
 			<< " " << "$" << amount << endl;
 		fout.close();
 	}
-	
+
 	//For expense
 	if (choice == 'E') {
 		string catergories, description;
