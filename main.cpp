@@ -5,18 +5,15 @@ using namespace std;
 
 int main()
 {
-    string name = "Vanessa";
-    int number_of_x=56,num_of_x=(number_of_x-name.length()-16)/2,cmd;
-    
-    if ((number_of_x-name.length()-36)%2==1) {number_of_x--;}
+    int cmd;
     
     while (1)
     {
-        cout<<setfill('x')<<setw(number_of_x)<<"x"<<endl;
-        for(int i=0;i<num_of_x;i++){cout<<"x";}
-        cout<<" Welcome back! "<<name<<" ";
-        for(int i=0;i<num_of_x;i++){if(i==num_of_x-1){cout<<"x"<<endl; break;}cout<<"x";}
-        cout<<setfill('x')<<setw(number_of_x)<<"x"<<endl;
+        cout<<setfill('x')<<setw(56)<<"x"<<endl;
+        for(int i=0;i<10;i++){cout<<"x";}
+        cout<<" Welcome back to Accounting System! ";
+        for(int i=0;i<10;i++){if(i==9){cout<<"x"<<endl; break;}cout<<"x";}
+        cout<<setfill('x')<<setw(56)<<"x"<<endl;
         
         cout<<endl<<"*******Changing the records of income or expense*******"<<endl;
         cout<<"1)  Add a record"<<endl;
