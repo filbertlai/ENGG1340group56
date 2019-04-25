@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <iomanip>
 using namespace std;
 
 void delet() {
 	cout << setfill('x') << setw(50) << "x" << endl;
 	char choice = 'A';
 	while (choice != 'I' && choice != 'E') {
-		cout << "Income or Expense? Please type in I or E" << endl;
+		cout << "Income or Expense? Please type in I or E: ";
 		cin >> choice;
 	}
 	if (choice == 'I') {
@@ -16,5 +17,15 @@ void delet() {
 		if (fin.fail()) {
 			cout << "Error!" << endl;
 		}
-    fin >> year >> month >> day >> cetegory >> description >> amount
-    cout << year << "/" << month << "/" << day << " " << cetegory << " " <<description << " " << "$" << amount <<endl;
+		string line;
+		int i = 1;
+		while (getline(fin,line)) {
+			cout << i << ". " << line << endl;
+			i += 1;
+		}
+	}
+}
+int main() {
+	delet();
+	return 0;
+}
