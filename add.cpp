@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+#include "start.h"
 using namespace std;
 
 void add() {
