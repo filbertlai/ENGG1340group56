@@ -75,7 +75,9 @@ void add() {
 		cout << "Amount(in HKD $):";
 		cin >> amount;
 		cout << endl;
-		fout << Year << " " << Month << " " << Day << " " << catergories << " " << description << " " << amount << endl;
+		fout << Year << " " << Month << " " << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+			<< " " << "$" << amount << endl;
+		fout.close();
 	}
 	if (choice == 'E') {
 		string catergories, description;
@@ -269,7 +271,9 @@ void add() {
 		cout << "Amount(in HKD $):";
 		cin >> amount;
 		cout << endl;
-		expense << Year << " " << Month << " " << Day << " " << catergories << " " << description << " " << amount << endl;
+		expense << Year << " " << Month << " " << Day << " " << "[" << catergories << "]" << " " << "(" <<description << ")" 
+		<< " " << "$" << amount << endl;
+		expense.close();
 	}
 }
 
