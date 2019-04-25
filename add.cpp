@@ -11,9 +11,12 @@ void add() {
 		cout << "Income or Expense? Please type in I or E" << endl;
 		cin >> choice;
 	}
+	
+	//For income:
 	if (choice == 'I') {
 		string catergories, description;
-		int Year, Month, Day, num_of_categories, amount;
+		int Year, Month, Day, num_of_categories;
+		double amount;
 		ofstream fout;
 		fout.open("income.txt", ios::app);
 		if (fout.fail()) {
@@ -79,9 +82,12 @@ void add() {
 			<< " " << "$" << amount << endl;
 		fout.close();
 	}
+	
+	//For expense
 	if (choice == 'E') {
 		string catergories, description;
-		int Year, Month, Day, num_of_categories, amount;
+		int Year, Month, Day, num_of_categories;
+		double amount;
 		ofstream expense;
 		expense.open("expense.txt", ios::app);
 		if (expense.fail()) {
