@@ -2,5 +2,6 @@
 #define _START_H
 
 void add();
+void del();
 
 #endif
