@@ -6,14 +6,14 @@ using namespace std;
 
 void add() {
 	cout << setfill('x') << setw(50) << "x" << endl;
-	char choice = 'A';
-	while (choice != 'I' && choice != 'E') {
-		cout << "Income or Expense? Please type in I or E" << endl;
+	string choice = "A";
+	while (choice != "I" && choice != "E") {
+		cout << "Income or Expense? Please type in I or E: ";
 		cin >> choice;
 	}
-	if (choice == 'I') {
+	if (choice == "I") {
 		string catergories, description;
-		int Year, Month, Day, num_of_categories;
+		int Year, Month, Day, num_of_categories=1;
 		double amount;
 		ofstream fout;
 		fout.open("income.txt", ios::app);
@@ -46,7 +46,7 @@ void add() {
 		cin >> num_of_categories;
 		// Check whether the input number is in the range of 1-6
 		while ((num_of_categories > 6) || (num_of_categories < 1)) {
-			cout << "Incorrect number!Please input a number from 1 to 6: ";
+			cout << "Incalid number!Please input a number from 1 to 6: ";
 			cin >> num_of_categories;
 		}
 		//input the categories rather than just the number
@@ -82,9 +82,9 @@ void add() {
 	}
 
 	//For expense
-	if (choice == 'E') {
+	if (choice == "E") {
 		string catergories, description;
-		int Year, Month, Day, num_of_categories;
+		int Year, Month, Day, num_of_categories=1;
 		double amount;
 		ofstream expense;
 		expense.open("expense.txt", ios::app);
