@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include "start.h"
 using namespace std;
 
 int main()
@@ -32,7 +33,7 @@ int main()
         cout<<"10) Customize style"<<endl;
         cout<<endl<<"Please enter the number of command: ";
         cin>>cmd;
-        if (cmd==1){}
+        if (cmd==1){add();}
         
         else if (cmd==2){}
         
