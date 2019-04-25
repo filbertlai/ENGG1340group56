@@ -95,7 +95,7 @@ void add() {
 		cout << "Day:";
 		cin >> Day;
 		while (Day > 31) {
-			cout << "Invalid day! Please input again. Day:"
+			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
 		cout << "Please choose the catergory from the below choices:" << endl;
@@ -198,7 +198,7 @@ void add() {
 			cout << "a)Entertainments" << endl;
 			cout << "b)Celebrations" << endl;
 			cout << "c)Holiday" << endl;
-			cout << "d)Interest call/Hobbies" << endl;
+			cout << "d)Interest call / Hobbies" << endl;
 			cout << "Please indicate your choice in a-d: ";
 			cin >> type;
 				while ((type > 'd') || (type < 'a')) {
@@ -215,11 +215,37 @@ void add() {
 				catergories = "Lifestyle-Holiday";
 			}
 			else if (type == 'd') {
-				catergories = "Lifestyle-Interest call/Hobbies";
+				catergories = "Lifestyle-InterestCall/Hobbies";
 			}
 			break;
 		case 6:
-			catergories = "Shopping";
+			cout << "Please choose the catergory from the below choices:" << endl;
+			cout << "a)Household goods" << endl;
+			cout << "b)Health supplements" << endl;
+			cout << "c)Electronical appliances" << endl;
+			cout << "d)Clothing / Footwear" << endl;
+			cout << "e}Cosmetics / Skincare products" << endl;
+			cout << "Please indicate your choice in a-e: ";
+			cin >> type;
+			while ((type > 'e') || (type < 'a')) {
+				cout << "Incorrect number!Please input a character from a to e: ";
+				cin >> type;
+			}
+			if (type == 'a') {
+				catergories = "Shopping-HouseholdGoods";
+			}
+			else if (type == 'b') {
+				catergories = "Shopping-HealthSupplements";
+			}
+			else if (type == 'c') {
+				catergories = "Shopping-ElectricalAplliances";
+			}
+			else if (type == 'd') {
+				catergories = "Shopping-Clothing/Footwear";
+			}
+			else if (type == 'e') {
+				catergories = "Shopping-Cosmetics/SkincareProducts";
+			}
 			break;
 		case 7:
 			catergories = "Investment";
@@ -244,4 +270,4 @@ int main(){
     add();
     cout<<"end"<<endl;
     return 0;
-}１
+}
