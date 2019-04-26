@@ -4,5 +4,7 @@
 void add();
 void delet();
 void edit();
+void category();
+void sort();
 
 #endif
