@@ -44,7 +44,16 @@ int main()
         num=stod(line.substr(pos_open));
         expenses_sum+=num;
         pos_open=line.find('[')+1;
-        pos_close=line.find('-');
+        if (line.find('-')==-1)
+        {
+            pos_close=line.find(']');
+            
+        }
+        else 
+        {
+            pos_close=line.find('-');
+            
+        }
         str=line.substr(pos_open,pos_close-pos_open);
         if (str=="Household") {EHousehold_sum+=num;}
         else if (str=="Transport") {ETransport_sum+=num;}
