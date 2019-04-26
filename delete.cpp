@@ -2,16 +2,20 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+#include "start.h"
 using namespace std;
 
+// show all the records for user to choose which record to delete
+// input the line number of the record to be deleted
+// output the new list of records back to income.txt / expense.txt
 void delet() {
 	cout << setfill('x') << setw(50) << "x" << endl;
-	char choice = 'A';
-	while (choice != 'I' && choice != 'E') {
+	string choice = "A";
+	while (choice != "I" && choice != "E") {
 		cout << "Income or Expense? Please type in I or E: ";
 		cin >> choice;
 	}
-	if (choice == 'I') {
+	if (choice == "I") {
 		ifstream fin;
 		fin.open("income.txt");
 		if (fin.fail()) {
@@ -57,7 +61,9 @@ void delet() {
 			result << finish << endl;
 		}
 	}
-	if (choice == 'E') {
+
+	//For expense:
+	if (choice == "E") {
 		ifstream ex;
 		ex.open("expense.txt");
 		if (ex.fail()) {
