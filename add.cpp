@@ -4,6 +4,8 @@
 #include <iomanip>
 using namespace std;
 
+//input I/E, year, month, day, catergory, dsecription, amount
+//output the record to income.txt / expense.txt
 void add() {
 	cout << setfill('x') << setw(50) << "x" << endl;
 	string choice = "A";
@@ -71,7 +73,7 @@ void add() {
 			catergories = "LotteryPrizes";
 			break;
 		}
-		cout << "Description:";
+		cout << "Description (if no description, please press 0) :";
 		cin >> description;
 		cout << "Amount(in HKD $):";
 		cin >> amount;
@@ -105,6 +107,7 @@ void add() {
 			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
+		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Household" << endl;
 		cout << "2.Transport" << endl;
@@ -270,7 +273,8 @@ void add() {
 			catergories = "Others";
 			break;
 		}
-		cout << "Description:";
+		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << "Description (if no description, please press 0) :";
 		cin >> description;
 		cout << "Amount(in HKD $):";
 		cin >> amount;
