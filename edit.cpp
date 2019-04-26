@@ -8,7 +8,7 @@ using namespace std;
 //chosse the specific record to edit
 //input corrected year, month, day, catergory, dsecription, amount
 //output the corrected record to income.txt / expense.txt
-void delet() {
+void edit() {
 	cout << setfill('x') << setw(50) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
