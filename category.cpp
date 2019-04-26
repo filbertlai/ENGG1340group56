@@ -8,7 +8,7 @@ using namespace std;
 // show all the records for user to choose which record to delete
 // input the line number of the record to be deleted
 // output the new list of records back to income.txt / expense.txt
-void delet() {
+void category() {
 	cout << setfill('x') << setw(50) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
