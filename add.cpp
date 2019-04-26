@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+#include "start.h"
 using namespace std;
 
 //input I/E, year, month, day, catergory, dsecription, amount
@@ -283,10 +284,4 @@ void add() {
 		<< " " << "$" << amount << endl;
 		expense.close();
 	}
-}
-
-int main(){
-    add();
-    cout<<"end"<<endl;
-    return 0;
 }
