@@ -33,13 +33,13 @@ int main()
     double PocketMoney_percentage=0; if (PocketMoney_sum!=0){PocketMoney_percentage=PocketMoney_sum/income_sum*100;}
     double Gifts_percentage=0; if (Gifts_sum!=0){Gifts_percentage=Gifts_sum/income_sum*100;}
     double LotteryPrizes_percentage=0; if (LotteryPrizes_sum!=0){LotteryPrizes_percentage=LotteryPrizes_sum/income_sum*100;}
-    cout<<"Sum of income:                   $"<<income_sum<<endl;
-    cout<<"Sum of income in Basic Salary:   $"<<BasicSalary_sum<<" ,which is "<<BasicSalary_percentage<<" % in total income."<<endl;
-    cout<<"Sum of income in Bonus:          $"<<Bonus_sum<<" ,which is "<<Bonus_percentage<<" % in total income."<<endl;
-    cout<<"Sum of income in Investment:     $"<<Investment_sum<<" ,which is "<<Investment_percentage<<" % in total income."<<endl;
-    cout<<"Sum of income in Pocket Money:   $"<<PocketMoney_sum<<" ,which is "<<PocketMoney_percentage<<" % in total income."<<endl;
-    cout<<"Sum of income in Gifts:          $"<<Gifts_sum<<" ,which is "<<Gifts_percentage<<" % in total income."<<endl;
-    cout<<"Sum of income in Lottery Prizes: $"<<LotteryPrizes_sum<<" ,which is "<<LotteryPrizes_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income:                     $"<<income_sum<<endl;
+    cout<<"Sum of income in Basic Salary:     $"<<BasicSalary_sum<<" ,which is "<<BasicSalary_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income in Bonus:            $"<<Bonus_sum<<" ,which is "<<Bonus_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income in Investment:       $"<<Investment_sum<<" ,which is "<<Investment_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income in Pocket Money:     $"<<PocketMoney_sum<<" ,which is "<<PocketMoney_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income in Gifts:            $"<<Gifts_sum<<" ,which is "<<Gifts_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income in Lottery Prizes:   $"<<LotteryPrizes_sum<<" ,which is "<<LotteryPrizes_percentage<<" % in total income."<<endl;
     fin.close();
     fin.open("expense.txt");
     if(fin.fail()){cout<<"You have not made any record on income!"<<endl;exit(1);}
