@@ -110,7 +110,3 @@ void delet() {
 		}
 	}
 }
-int main() {
-	delet();
-	return 0;
-}
