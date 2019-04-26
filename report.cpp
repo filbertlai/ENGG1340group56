@@ -33,13 +33,14 @@ int main()
     double PocketMoney_percentage=0; if (PocketMoney_sum!=0){PocketMoney_percentage=PocketMoney_sum/income_sum*100;}
     double Gifts_percentage=0; if (Gifts_sum!=0){Gifts_percentage=Gifts_sum/income_sum*100;}
     double LotteryPrizes_percentage=0; if (LotteryPrizes_sum!=0){LotteryPrizes_percentage=LotteryPrizes_sum/income_sum*100;}
+    cout<<"Part of Income:"<<endl;
     cout<<"Sum of income:                     $"<<income_sum<<endl;
     cout<<"Sum of income in Basic Salary:     $"<<BasicSalary_sum<<" ,which is "<<BasicSalary_percentage<<" % in total income."<<endl;
     cout<<"Sum of income in Bonus:            $"<<Bonus_sum<<" ,which is "<<Bonus_percentage<<" % in total income."<<endl;
     cout<<"Sum of income in Investment:       $"<<Investment_sum<<" ,which is "<<Investment_percentage<<" % in total income."<<endl;
     cout<<"Sum of income in Pocket Money:     $"<<PocketMoney_sum<<" ,which is "<<PocketMoney_percentage<<" % in total income."<<endl;
     cout<<"Sum of income in Gifts:            $"<<Gifts_sum<<" ,which is "<<Gifts_percentage<<" % in total income."<<endl;
-    cout<<"Sum of income in Lottery Prizes:   $"<<LotteryPrizes_sum<<" ,which is "<<LotteryPrizes_percentage<<" % in total income."<<endl;
+    cout<<"Sum of income in Lottery Prizes:   $"<<LotteryPrizes_sum<<" ,which is "<<LotteryPrizes_percentage<<" % in total income."<<endl<<endl;
     fin.close();
     fin.open("expense.txt");
     if(fin.fail()){cout<<"You have not made any record on income!"<<endl;exit(1);}
@@ -80,6 +81,7 @@ int main()
     double EInvestment_percentage=0; if (EInvestment_sum!=0){EInvestment_percentage=EInvestment_sum/expenses_sum*100;}
     double EGifts_percentage=0; if (EGifts_sum!=0){EGifts_percentage=EGifts_sum/expenses_sum*100;}
     double EOthers_percentage=0; if (EOthers_sum!=0){EOthers_percentage=EOthers_sum/expenses_sum*100;}
+    cout<<"Part of Expenses:"<<endl;
     cout<<"Sum of expenses:                   $"<<expenses_sum<<endl;
     cout<<"Sum of expenses in Household:      $"<<EHousehold_sum<<" ,which is "<<EHousehold_percentage<<" % in total expenses."<<endl;
     cout<<"Sum of expenses in Transport:      $"<<ETransport_sum<<" ,which is "<<ETransport_percentage<<" % in total expenses."<<endl;
@@ -89,5 +91,5 @@ int main()
     cout<<"Sum of expenses in Shopping:       $"<<EShopping_sum<<" ,which is "<<EShopping_percentage<<" % in total expenses."<<endl;
     cout<<"Sum of expenses in Investment:     $"<<EInvestment_sum<<" ,which is "<<EInvestment_percentage<<" % in total expenses."<<endl;
     cout<<"Sum of expenses in Gifts:          $"<<EGifts_sum<<" ,which is "<<EGifts_percentage<<" % in total expenses."<<endl;
-    cout<<"Sum of expenses in Others:         $"<<EOthers_sum<<" ,which is "<<EOthers_percentage<<" % in total expenses."<<endl;
+    cout<<"Sum of expenses in Others:         $"<<EOthers_sum<<" ,which is "<<EOthers_percentage<<" % in total expenses."<<endl<<endl;
 }
