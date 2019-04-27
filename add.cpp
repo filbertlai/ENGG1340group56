@@ -36,12 +36,6 @@ void add() {
 			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
-		string newDay;
-		if (Day < 10) {
-			string q = stoi(Day);
-			newDay = "0" + q;
-		}
-		else { newDay = stoi(Day) }
 		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Basic Salary" << endl;
@@ -84,8 +78,18 @@ void add() {
 		cout << "Amount(in HKD $):";
 		cin >> amount;
 		cout << endl;
-		fout << Year << " " << Month << " " << newDay << " " << "[" << catergories << "]" << " " << "(" << description << ")"
-			<< " " << "$" << amount << endl;
+		if ((Month < 10) && (Day < 10)) {
+			fout << Year << " " << "0" << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+				<< " " << "$" << amount << endl;
+		}
+		if (Month < 10) {
+			fout << Year << " " << "0" << Month << " " << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+				<< " " << "$" << amount << endl;
+		}
+		else if (Day < 10) {
+			fout << Year << " " << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+				<< " " << "$" << amount << endl;
+		}
 		fout.close();
 	}
 
@@ -113,12 +117,6 @@ void add() {
 			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
-		string newDay;
-		if (Day < 10) {
-			string q = stoi(Day);
-			newDay = "0" + q;
-		}
-		else { newDay = stoi(Day) }
 		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Household" << endl;
@@ -291,8 +289,19 @@ void add() {
 		cout << "Amount(in HKD $):";
 		cin >> amount;
 		cout << endl;
-		expense << Year << " " << Month << " " << newDay << " " << "[" << catergories << "]" << " " << "(" << description << ")"
-			<< " " << "$" << amount << endl;
+		int v, f;
+		if ((Month < 10)&&(Day<10)) {
+			expense << Year << " " << "0" << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+				<< " " << "$" << amount << endl;
+		}
+		if (Month < 10) {
+			expense << Year << " " << "0" << Month << " " << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+				<< " " << "$" << amount << endl;
+		}
+		else if (Day < 10) {
+			expense << Year << " " << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+				<< " " << "$" << amount << endl;
+		}
 		expense.close();
 	}
 }
