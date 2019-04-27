@@ -60,10 +60,6 @@ Lastly, the program should be able to help the user in achieveing some long-term
 
 (When the expenditure in the specific category exceed the budget plan, an automatical notification will be generated to remind the user to reduce expenditure in that category so that long-term financial plan can be maintained)
 
-- **Setting password**
-
-(Users can set a password to protect their privacy by accessing the data with authentication since the financial position should not be easily disclosed to others)
-
 - **Preset the regular income and expenses**
 
 (Users can preset regular income, such as working salary since it is constant in a period of time)
