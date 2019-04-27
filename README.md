@@ -1,16 +1,14 @@
 # 1)Problem Statement:
-Due to technological convergence, online payment is becoming prevalent in the 21st century. Yet for the customers, they can make payment by just having a few clicks in the mobile phone with the use of online wallets. The apps specializing online payment like O! ePay, Payme, and Paypal even make online payment much faster and easier. In addition, ios and Android had introduced Apple Pay and Google Pay for users to tie their credit cards to the phone so that they can pay with their phone contactlessly in retail stores by just tapping their phones to the terminal. These have made online payment convenient and users may hence not remember how much they spent, resulting in overusing of money in light of the lack of awareness on the amount of money they spent.
+Due to technological convergence, online payment is becoming prevalent in the 21st century. Yet for the customers, they can make payment by just having a few clicks in the mobile phone with the use of online wallets. The apps specializing online payment like O! ePay, Payme, and Paypal even make online payment much faster and easier. In addition, ios and Android had introduced Apple Pay and Google Pay for users to tie their credit cards to the phone so that they can pay with their phone contactlessly in retail stores by just tapping their phones to the terminal. These have made online payment convenient and users may hence not remember how much they spent, resulting in overusing of money in light of the lack of awareness on the amount of money they spent which is the problem of our program aims to solve.
 
 
 # 2)Problem Setting:
 
 In order to tackle the problem, a program is suggested while there are some aims to be accomplished.
 
-Firstly, the app should be highly customizable, ranging from the data input to the style of demonstration. Hence, the program allows editable records as well as customized messages and style of presentation. 
+Firstly, the app should be highly customizable, ranging from the data input to the editing of data. Hence, the program allows editable and deletable records as well as customized messages. 
 
-Secondly, the privacy of user should be protected. Therefore, the program allows user to establish a passcord so that only the user oneself is authorized to access the data. 
-
-Thirdly, the program should be intelligent. This is the reason why the program automically notify the user when the expenses violate budget plan and simultaneously give out some suggestions on some designated categories as well as anaylze the budget plan with some calculations. 
+Secondly, the program should be intelligent. This is the reason why the program automically notify the user when the expenses violate budget plan and anaylze the budget plan with some calculations. 
 
 Fourthly, user should be able to find out any specific records so the program allows user to view records of specific category or account as well as sorted by date or amount. The user can even search by keywords. 
 
