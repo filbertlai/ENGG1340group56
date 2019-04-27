@@ -9,7 +9,7 @@ using namespace std;
 // input the line number of the record to be deleted
 // output the new list of records back to income.txt / expense.txt
 void category() {
-	cout << setfill('x') << setw(50) << "x" << endl;
+	cout << setfill('x') << setw(56) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
 		cout << "Income or Expense? Please type in I or E: ";
@@ -20,7 +20,7 @@ void category() {
 	//For income
 	if (choice == "I") {
 		int num_of_categories;
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		cout << "Please choose the category from the below choices:" << endl;
 		cout << "1.Basic Salary" << endl;
 		cout << "2.Bonus" << endl;
@@ -78,7 +78,7 @@ void category() {
 	//For expense:
 	if (choice == "E") {
 		int num_of_categories;
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Household" << endl;
 		cout << "2.Transport" << endl;
@@ -129,7 +129,7 @@ void category() {
 		if (ex.fail()) {
 			cout << "You don't have any records in expense!" << endl;
 		}
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		string str, line;
 		int pos_open, pos_close;
 		while (getline(ex, line)) {
