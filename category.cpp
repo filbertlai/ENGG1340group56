@@ -129,6 +129,7 @@ void category() {
 		if (ex.fail()) {
 			cout << "You don't have any records in expense!" << endl;
 		}
+		cout << setfill('x') << setw(50) << "x" << endl;
 		string str, line;
 		int pos_open, pos_close;
 		while (getline(ex, line)) {
