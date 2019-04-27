@@ -10,7 +10,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 3)  Edit a record
 
 ****Looking for specific record(s)/statistic report****
-4)  View records of specific category or account
+4)  View records of specific category
 5)  Search for specific record(s)
 6)  Show Statistic report of financial state
 
@@ -90,7 +90,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 3)  Edit a record
 
 ****Looking for specific record(s)/statistic report****
-4)  View records of specific category or account
+4)  View records of specific category
 5)  Search for specific record(s)
 6)  Show Statistic report of financial state
 
@@ -183,7 +183,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 3)  Edit a record
 
 ****Looking for specific record(s)/statistic report****
-4)  View records of specific category or account
+4)  View records of specific category
 5)  Search for specific record(s)
 6)  Show Statistic report of financial state
 
@@ -219,7 +219,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 3)  Edit a record
 
 ****Looking for specific record(s)/statistic report****
-4)  View records of specific category or account
+4)  View records of specific category
 5)  Search for specific record(s)
 6)  Show Statistic report of financial state
 
