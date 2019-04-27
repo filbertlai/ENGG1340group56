@@ -30,5 +30,5 @@ int main()
     fout<<year<<" "<<month<<" $"<<budget;
     fout.close();
     cout<<"Budget setted successfully!"<<endl;
-    cout<<"The budget you setted is: $"<<budget<<" in "<<month<<" of "<<year<<".";
+    cout<<"The budget you setted is: $"<<budget<<" in "<<month<<"(Month in number) of "<<year<<"."<<endl;
 }
