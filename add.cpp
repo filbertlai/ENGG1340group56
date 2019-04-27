@@ -2,7 +2,6 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
-#include "start.h"
 using namespace std;
 
 //input I/E, year, month, day, catergory, dsecription, amount
@@ -16,7 +15,7 @@ void add() {
 	}
 	if (choice == "I") {
 		string catergories, description;
-		int Year, Month, Day, num_of_categories=1;
+		int Year, Month, Day, num_of_categories = 1;
 		double amount;
 		ofstream fout;
 		fout.open("income.txt", ios::app);
@@ -27,16 +26,22 @@ void add() {
 		cin >> Year;
 		cout << "Month:";
 		cin >> Month;
-		while (Month > 12) {
+		while ((Month > 12) || (Month < 1)) {
 			cout << "Invalid month! Please input again. Month: ";
 			cin >> Month;
 		}
 		cout << "Day:";
 		cin >> Day;
-		while (Day > 31) {
-			cout << "Invalid day! Please input again. Day: ";
+		while ((Day > 31) || (Day < 1)) {
+			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
+		string newDay;
+		if (Day < 10) {
+			string q = stoi(Day);
+			newDay = "0" + q;
+		}
+		else { newDay = stoi(Day) }
 		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Basic Salary" << endl;
@@ -53,7 +58,7 @@ void add() {
 			cin >> num_of_categories;
 		}
 		//input the categories rather than just the number
-		switch (num_of_categories) 
+		switch (num_of_categories)
 		{
 		case 1:
 			catergories = "BasicSalary";
@@ -79,7 +84,7 @@ void add() {
 		cout << "Amount(in HKD $):";
 		cin >> amount;
 		cout << endl;
-		fout << Year << " " << Month << " " << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+		fout << Year << " " << Month << " " << newDay << " " << "[" << catergories << "]" << " " << "(" << description << ")"
 			<< " " << "$" << amount << endl;
 		fout.close();
 	}
@@ -87,7 +92,7 @@ void add() {
 	//For expense
 	if (choice == "E") {
 		string catergories, description;
-		int Year, Month, Day, num_of_categories=1;
+		int Year, Month, Day, num_of_categories = 1;
 		double amount;
 		ofstream expense;
 		expense.open("expense.txt", ios::app);
@@ -98,16 +103,22 @@ void add() {
 		cin >> Year;
 		cout << "Month:";
 		cin >> Month;
-		while (Month > 12) {
+		while ( (Month > 12)||(Month<1)) {
 			cout << "Invalid month! Please input again. Month: ";
 			cin >> Month;
 		}
 		cout << "Day:";
 		cin >> Day;
-		while (Day > 31) {
+		while ((Day > 31) || (Day < 1)) {
 			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
+		string newDay;
+		if (Day < 10) {
+			string q = stoi(Day);
+			newDay = "0" + q;
+		}
+		else { newDay = stoi(Day) }
 		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Household" << endl;
@@ -164,10 +175,10 @@ void add() {
 			cout << "c)Hairdressing" << endl;
 			cout << "Please indicate your choice in a-c: ";
 			cin >> type;
-				while ((type > 'c') || (type < 'a')) {
-					cout << "Incorrect number!Please input a character from a to c: ";
-					cin >> type;
-				}
+			while ((type > 'c') || (type < 'a')) {
+				cout << "Incorrect number!Please input a character from a to c: ";
+				cin >> type;
+			}
 			if (type == 'a') {
 				catergories = "Personalcare-Medical/Dental";
 			}
@@ -188,24 +199,24 @@ void add() {
 			cout << "e}Snacks" << endl;
 			cout << "Please indicate your choice in a-e: ";
 			cin >> type;
-				while ((type > 'e') || (type < 'a')) {
-					cout << "Incorrect number!Please input a character from a to e: ";
-					cin >> type;
-				}
+			while ((type > 'e') || (type < 'a')) {
+				cout << "Incorrect number!Please input a character from a to e: ";
+				cin >> type;
+			}
 			if (type == 'a') {
-				catergories = "Food & Beverage-Breakfast";
+				catergories = "Food&Beverage-Breakfast";
 			}
 			else if (type == 'b') {
-				catergories = "Food & Beverage-Lunch";
+				catergories = "Food&Beverage-Lunch";
 			}
 			else if (type == 'c') {
-				catergories = "Food & Beverage-Tea";
+				catergories = "Food&Beverage-Tea";
 			}
 			else if (type == 'd') {
-				catergories = "Food & Beverage-Dinner";
+				catergories = "Food&Beverage-Dinner";
 			}
 			else if (type == 'e') {
-				catergories = "Food & Beverage-Snacks";
+				catergories = "Food&Beverage-Snacks";
 			}
 			break;
 		case 5:
@@ -217,10 +228,10 @@ void add() {
 			cout << "d)Interest call / Hobbies" << endl;
 			cout << "Please indicate your choice in a-d: ";
 			cin >> type;
-				while ((type > 'd') || (type < 'a')) {
-					cout << "Incorrect number!Please input a character from a to d: ";
-					cin >> type;
-				}
+			while ((type > 'd') || (type < 'a')) {
+				cout << "Incorrect number!Please input a character from a to d: ";
+				cin >> type;
+			}
 			if (type == 'a') {
 				catergories = "Lifestyle-Entertainments";
 			}
@@ -255,7 +266,7 @@ void add() {
 				catergories = "Shopping-HealthSupplements";
 			}
 			else if (type == 'c') {
-				catergories = "Shopping-ElectricalAplliances";
+				catergories = "Shopping-ElectricalAppliances";
 			}
 			else if (type == 'd') {
 				catergories = "Shopping-Clothing/Footwear";
@@ -280,8 +291,14 @@ void add() {
 		cout << "Amount(in HKD $):";
 		cin >> amount;
 		cout << endl;
-		expense << Year << " " << Month << " " << Day << " " << "[" << catergories << "]" << " " << "(" <<description << ")" 
-		<< " " << "$" << amount << endl;
+		expense << Year << " " << Month << " " << newDay << " " << "[" << catergories << "]" << " " << "(" << description << ")"
+			<< " " << "$" << amount << endl;
 		expense.close();
 	}
+}
+
+int main(){
+    add();
+    cout<<"end"<<endl;
+    return 0;
 }
