@@ -65,7 +65,7 @@ int main()
         if (str=="Household") {EHousehold_sum+=num;}
         else if (str=="Transport") {ETransport_sum+=num;}
         else if (str=="Personalcare") {EPersonalcare_sum+=num;}
-        else if (str=="Food & Beverage") {EFoodandBeverage_sum+=num;}
+        else if (str=="Food&Beverage") {EFoodandBeverage_sum+=num;}
         else if (str=="Lifestyle") {ELifestyle_sum+=num;}
         else if (str=="Shopping") {EShopping_sum+=num;}
         else if (str=="Investment") {EInvestment_sum+=num;}
