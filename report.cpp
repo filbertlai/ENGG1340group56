@@ -77,8 +77,17 @@ int report()
     cout<<"Welcome to the statistic report of your income and expense!"<<endl;
     cout<<"The year of the statistic report:";
     cin>>year;
+    while ((year > 3000) || (year < 1500)) {
+			cout << "Invalid year! Please input again. Year: ";
+			cin >> year;
+	}
     cout<<"The month of the satistic report:";
     cin>>month;
+    cin >> month;
+	while ((month > 12) || (month < 1)) {
+		cout << "Invalid month! Please input again. Month: ";
+		cin >> month;
+	}
     selectdate(year,month);
     
     
