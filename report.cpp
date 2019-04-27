@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    cout<<"Welcome to the statistic report of your income and expense!"<<endl;
+    cout<<"Welcome to the statistic report of your income and expense!"<<endl<<endl;
     double income_sum=0,BasicSalary_sum=0,Bonus_sum=0,Investment_sum=0,PocketMoney_sum=0,Gifts_sum=0,LotteryPrizes_sum=0,num;
     string str,line;
     int pos_open,pos_close;
