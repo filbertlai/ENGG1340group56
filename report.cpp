@@ -1,3 +1,4 @@
+#include "report.h"
 #include<iostream>
 #include<string>
 #include<fstream>
