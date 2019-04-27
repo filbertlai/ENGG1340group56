@@ -24,6 +24,10 @@ void add() {
 		}
 		cout << "Year:";
 		cin >> Year;
+		while ((Year > 3000) || (Year < 1500)) {
+			cout << "Invalid year! Please input again. Year: ";
+			cin >> Year;
+		}
 		cout << "Month:";
 		cin >> Month;
 		while ((Month > 12) || (Month < 1)) {
@@ -75,8 +79,12 @@ void add() {
 		}
 		cout << "Description (if no description, please press 0) :";
 		cin >> description;
-		cout << "Amount(in HKD $):";
+		cout << "Amount(in HKD $): ";
 		cin >> amount;
+		while (amount < 1) {
+			cout << "Invalid amount! Please input a positive number. Amount(in HKD $): ";
+			cin >> amount;
+		}
 		cout << endl;
 		if ((Month < 10) && (Day < 10)) {
 			fout << Year << " " << "0" << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
@@ -105,9 +113,13 @@ void add() {
 		}
 		cout << "Year:";
 		cin >> Year;
+		while ((Year > 3000) || (Year < 1500)) {
+			cout << "Invalid year! Please input again. Year: ";
+			cin >> Year;
+		}
 		cout << "Month:";
 		cin >> Month;
-		while ( (Month > 12)||(Month<1)) {
+		while ((Month > 12) || (Month < 1)) {
 			cout << "Invalid month! Please input again. Month: ";
 			cin >> Month;
 		}
@@ -286,8 +298,12 @@ void add() {
 		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Description (if no description, please press 0) :";
 		cin >> description;
-		cout << "Amount(in HKD $):";
+		cout << "Amount(in HKD $): ";
 		cin >> amount;
+		while (amount < 1) {
+			cout << "Invalid amount! Please input a positive number. Amount(in HKD $): ";
+			cin >> amount;
+		}
 		cout << endl;
 		int v, f;
 		if ((Month < 10)&&(Day<10)) {
