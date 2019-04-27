@@ -536,6 +536,7 @@ int main()
                 {
                     cout<<line<<endl;
                 }
+                break;
             }
         }
         fin.close();
