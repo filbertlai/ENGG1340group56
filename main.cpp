@@ -37,7 +37,7 @@ int main()
         cout<<"11) Preset the regular income or expenses"<<endl;
         cout<<endl<<"Please enter the number of command: ";
         cin>>cmd;
-        if (cmd==1){add();}
+		if (cmd == 1) { add(); }
         
         else if (cmd==2) {delet(); }
         
