@@ -12,7 +12,7 @@ using namespace std;
 
 int budget()
 {
-    int year, month;
+    int year, month, day;
     double budget;
     cout<<"Welcome to set your monthly budget!"<<endl;
     cout<<"The year of the budget plan: ";
@@ -38,6 +38,27 @@ int budget()
     }
     fout<<year<<" "<<month<<" $"<<budget;
     fout.close();
-    cout<<"Budget setted successfully!"<<endl;
-    cout<<"The budget you setted is: $"<<budget<<" in "<<month<<"(Month in number) of "<<year<<"."<<endl;
+    cout<<endl<<"XXX Budget setted successfully! XXX"<<endl;
+    cout<<"The budget you setted is: $"<<budget<<" in Month "<<month<<" of "<<year<<"."<<endl;
+    if (month==1||month==3||month==5||month==7||month==8||month==10||month==12)
+    {
+        day=31;
+    }
+    else if (month==2&&year%4==0)
+    {
+        day=29;
+    }
+    else if (month==2&&year%4!=0)
+    {
+        day=28;
+    }
+    else if (month==4||month==6||month==9||month==11)
+    {
+        day=30;
+    }
+    cout<<"Month "<<month<<" in year "<<year<<" has "<<day<<" days."<<endl;
+    cout<<"Therefore, you have $"<<budget<<"/"<<day<<" = $"<<budget/day<<" daily budget in average!"<<endl;
+    
+    
+    
 }
