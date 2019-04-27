@@ -142,6 +142,10 @@ void search_by_date()
     {
         cout<<"The year you want to search: ";
         cin>>search;
+        while ((search > 3000) || (search < 1500)) {
+			cout << "Invalid year! Please input again. Year: ";
+			cin >> search;
+		}
         string line;
         int year;
         cout<<"Start Searching: "<<endl;
