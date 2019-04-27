@@ -28,7 +28,7 @@ int main()
 		cout << "2)  Delete a record" << endl;
 		cout << "3)  Edit a record" << endl;
 		cout << endl << "****Looking for specific record(s)/statistic report****" << endl;
-		cout << "4)  View records of specific category or account" << endl;
+		cout << "4)  View records of specific category" << endl;
 		cout << "5)  Search for specific record(s)" << endl;
 		cout << "6)  Show Statistic report of financial state" << endl;
 		cout << endl << "*****************Preset budget/records*****************" << endl;
