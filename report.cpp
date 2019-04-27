@@ -43,7 +43,7 @@ int main()
     cout<<"Sum of income in Lottery Prizes:   $"<<LotteryPrizes_sum<<" ,which is "<<LotteryPrizes_percentage<<" % in total income."<<endl<<endl;
     fin.close();
     fin.open("expense.txt");
-    if(fin.fail()){cout<<"You have not made any record on income!"<<endl;exit(1);}
+    if(fin.fail()){cout<<"You have not made any record on expense!"<<endl;exit(1);}
     double expenses_sum=0,EHousehold_sum=0,ETransport_sum=0,EPersonalcare_sum=0,EFoodandBeverage_sum=0,ELifestyle_sum=0,EShopping_sum=0,EInvestment_sum=0,EGifts_sum=0,EOthers_sum=0;
     while(getline(fin,line))
     {
