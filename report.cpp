@@ -73,6 +73,7 @@ int report()
 {
     int year, month;
     string filename;
+    cout << setfill('x') << setw(56) << "x" << endl;
     cout<<"Welcome to the statistic report of your income and expense!"<<endl;
     cout<<"The year of the statistic report:";
     cin>>year;
