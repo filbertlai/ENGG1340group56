@@ -42,6 +42,5 @@ int main()
 		else if (cmd == 5) { searchh(); }
 		else if (cmd == 6) { report(); }
 		else if (cmd == 7) { budget(); }
-		return 0;
 	}
 }
