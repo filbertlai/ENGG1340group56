@@ -640,6 +640,7 @@ void search_by_description()
 //The function will then guide the user to different functions and eventually output the relevant records
 int searchh()
 {
+    cout<<setfill('x')<<setw(56)<<"x"<<endl;
     cout<<"Welcome to search for specific record(s)!"<<endl;
     cout<<"1) Search for income"<<endl;
     cout<<"2) Search for expense"<<endl;
