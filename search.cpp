@@ -19,7 +19,7 @@ int search_by_date()
 int search_by_amount()
 {
     cout<<"1) Search by exact amount"<<endl;
-    cout<<"2) Search by a range"<<endl;
+    cout<<"2) Search by a inclusive range"<<endl;
     cout<<"3) Search by upper limit"<<endl;
     cout<<"4) Search by lower limit"<<endl;
     cout<<"Please enter 1/2/3/4: ";
@@ -183,8 +183,8 @@ int main()
                 }
             }
         }
-            cout<<"End of Search!"<<endl;
-            fin.close();
+        cout<<"End of Searching!"<<endl;
+        fin.close();
     }
     
     
@@ -400,7 +400,7 @@ int main()
                     cout<<line<<endl;
                 }
             }
-            cout<<"End of searching!"<<endl;
+            cout<<"End of Searching!"<<endl;
             fin.close();
         }
     }
@@ -436,6 +436,7 @@ int main()
         {
             cout<<"The exact amount you want to search: ";
             cin>>num;
+            cout<<endl<<"Start Searching: "<<endl;
             while (getline(fin,line))
             {
                 pos_open=line.find('$')+1;
@@ -454,11 +455,12 @@ int main()
             cin>>up;
             cout<<endl<<"The lower limit of the amount you want to search: ";
             cin>>low;
+            cout<<endl<<"Start Searching: "<<endl;
             while (getline(fin,line))
             {
                 pos_open=line.find('$')+1;
                 n=stod(line.substr(pos_open));
-                if (n<up&&n>low)
+                if (n<=up&&n>=low)
                 {
                     cout<<line<<endl;
                 }
@@ -469,11 +471,12 @@ int main()
         {
             cout<<"The upper limit of the amount you want to search: ";
             cin>>up;
+            cout<<endl<<"Start Searching: "<<endl;
             while (getline(fin,line))
             {
                 pos_open=line.find('$')+1;
                 n=stod(line.substr(pos_open));
-                if (n<up)
+                if (n<=up)
                 {
                     cout<<line<<endl;
                 }
@@ -484,17 +487,20 @@ int main()
         {
             cout<<endl<<"The lower limit of the amount you want to search: ";
             cin>>low;
+            cout<<endl<<"Start Searching: "<<endl;
             while (getline(fin,line))
             {
                 pos_open=line.find('$')+1;
                 n=stod(line.substr(pos_open));
-                if (n>low)
+                if (n>=low)
                 {
                     cout<<line<<endl;
                 }
                 
             }
         }
+        fin.close();
+        cout<<"End of Searching!";
     }
     
     
@@ -524,7 +530,7 @@ int main()
                 exit(1);
             }
         }
-        
+        cout<<"Start Searching: "<<endl;
         while (getline(fin,line))
         {
             pos_open=line.find('(')+1;
@@ -540,7 +546,7 @@ int main()
             }
         }
         fin.close();
-        cout<<"End of searching!"<<endl;
+        cout<<"End of Searching!"<<endl;
     }    
     
 }
