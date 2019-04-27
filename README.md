@@ -50,7 +50,7 @@ Lastly, the program should be able to help the user in achieveing some long-term
 
 - **Read the statistic report of user's financial state**
 
-(Statistic report shows monthly income and expenses, percentages of income and expenses of each category, the trend of monthly income, expenditures and assets)
+(Statistic report shows income and expenses, percentages of income and expenses of each category)
 
 - **Set a budget plan for the future months**
 
@@ -63,10 +63,6 @@ Lastly, the program should be able to help the user in achieveing some long-term
 - **Setting password**
 
 (Users can set a password to protect their privacy by accessing the data with authentication since the financial position should not be easily disclosed to others)
-
-- **Customize style**
-
-(Users can customize the interface by choosing their favorable text color, background color, and font size)
 
 - **Preset the regular income and expenses**
 
