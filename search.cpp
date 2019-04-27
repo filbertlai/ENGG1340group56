@@ -164,6 +164,10 @@ void search_by_date()
     {
         cout<<"The month you want to search: ";
         cin>>search;
+	while ((search > 12) || (search < 1)) {
+			cout << "Invalid month! Please input again. Month: ";
+			cin >> search;
+		}
         string line;
         int month;
         cout<<"Start Searching: "<<endl;
