@@ -58,3 +58,7 @@ Lastly, the program should be able to help the user in achieveing some long-term
 - **There is only one person using the program**
 
 - **The program is for personal use**
+
+
+
+input/output specification are included in the comments of program.
