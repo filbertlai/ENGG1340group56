@@ -61,6 +61,7 @@ void delet() {
 			result << finish << endl;
 		}
 		remove("tempi.txt");
+		cout << "The tempory file had removed!" << endl;
 	}
 
 	//For expense:
@@ -110,5 +111,6 @@ void delet() {
 			result << finish << endl;
 		}
 		remove("tempe.txt");
+		cout << "The tempory file had removed!" << endl;
 	}
 }
