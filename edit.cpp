@@ -137,7 +137,7 @@ void edit() {
 			cout << i << ". " << line << endl;
 			i += 1;
 		}
-		cout << "Please type in the line number that you would like to delete: ";
+		cout << "Please type in the line number that you would like to edit: ";
 		int line_number;
 		cin >> line_number;
 		ex.close();
