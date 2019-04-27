@@ -637,7 +637,7 @@ void search_by_description()
 //For example, if the user wants to search in the records of expenses
 //then, the user should input (2)
 //The function will then guide the user to different functions and eventually output the relevant records
-int search()
+int searchh()
 {
     cout<<"Welcome to search for specific record(s)!"<<endl;
     cout<<"1) Search for income"<<endl;
