@@ -9,7 +9,7 @@ using namespace std;
 //Then, the user is required to input (2019 -> 4 -> 1000)
 //After the input, "budget.txt" will be generated with content (2019 4 $1000)
 
-int main()
+int budget()
 {
     int year, month;
     double budget;
