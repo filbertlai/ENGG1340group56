@@ -9,7 +9,7 @@ using namespace std;
 // input the line number of the record to be deleted
 // output the new list of records back to income.txt / expense.txt
 void delet() {
-	cout << setfill('x') << setw(50) << "x" << endl;
+	cout << setfill('x') << setw(56) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
 		cout << "Income or Expense? Please type in I or E: ";
