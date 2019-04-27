@@ -84,7 +84,6 @@ int report()
 	}
     cout<<"The month of the satistic report:";
     cin>>month;
-    cin >> month;
 	while ((month > 12) || (month < 1)) {
 		cout << "Invalid month! Please input again. Month: ";
 		cin >> month;
