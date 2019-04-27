@@ -9,7 +9,7 @@ using namespace std;
 //output the record to income.txt / expense.txt
 void add() {
 	//Choosing income or expense
-	cout << setfill('x') << setw(50) << "x" << endl;
+	cout << setfill('x') << setw(56) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
 		cout << "Income or Expense? Please type in I or E: ";
@@ -138,7 +138,7 @@ void add() {
 			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Household" << endl;
 		cout << "2.Transport" << endl;
@@ -158,7 +158,7 @@ void add() {
 		char type;
 		switch (num_of_categories) {
 		case 1:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Internet" << endl;
 			cout << "b)Mobile phone" << endl;
@@ -187,7 +187,7 @@ void add() {
 			catergories = "Transport";
 			break;
 		case 3:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Medical/Dental" << endl;
 			cout << "b)Beauty/Fitness" << endl;
@@ -209,7 +209,7 @@ void add() {
 			}
 			break;
 		case 4:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Breakfast" << endl;
 			cout << "b)Lunch" << endl;
@@ -239,7 +239,7 @@ void add() {
 			}
 			break;
 		case 5:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Entertainments" << endl;
 			cout << "b)Celebrations" << endl;
@@ -265,7 +265,7 @@ void add() {
 			}
 			break;
 		case 6:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Household goods" << endl;
 			cout << "b)Health supplements" << endl;
@@ -304,7 +304,7 @@ void add() {
 			catergories = "Others";
 			break;
 		}
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		cout << "Description (if no description, please press 0) :";
 		cin >> description;
 		cout << "Amount(in HKD $): ";
