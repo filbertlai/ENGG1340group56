@@ -1,8 +1,8 @@
+#include "edit.h"
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <iomanip>
-#include "start.h"
 using namespace std;
 
 //chosse the specific record to edit
@@ -15,6 +15,7 @@ void edit() {
 		cout << "Income or Expense? Please type in I or E: ";
 		cin >> choice;
 	}
+	//For income
 	if (choice == "I") {
 		ifstream fin;
 		fin.open("income.txt");
@@ -91,7 +92,7 @@ void edit() {
 		cin >> amount;
 		cout << endl;
 
-		//open new file
+		//open a temporary file to store the new list of records (with the specific line deleted)
 		ofstream temp;
 		ifstream old;
 		old.open("income.txt");
@@ -113,7 +114,7 @@ void edit() {
 		temp.close();
 		old.close();
 
-		//input the record back from temp to expense.txt
+		//input the record from tempi.txt back to expense.txt
 		ifstream temp2;
 		ofstream result;
 		result.open("income.txt");
@@ -141,7 +142,7 @@ void edit() {
 		cin >> line_number;
 		ex.close();
 
-		//edit the record
+		//Delete the record
 		string catergories, description;
 		int Year, Month, Day, num_of_categories = 1;
 		double amount;
@@ -332,7 +333,7 @@ void edit() {
 		cin >> amount;
 		cout << endl;
 
-		//open new file to store the record temperary
+		//open new file to store the record temperarily
 		ofstream temp; 
 		ifstream old;
 		old.open("expense.txt");
@@ -354,7 +355,7 @@ void edit() {
 		temp.close();
 		old.close();
 
-		//input the record back from temp to expense.txt
+		//input the record back from tempe.txt to expense.txt
 		ifstream temp2;
 		ofstream result;
 		result.open("expense.txt");
