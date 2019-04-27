@@ -6,5 +6,8 @@ void delet();
 void edit();
 void category();
 void sort();
+int search();
+int budget();
+int report();
 
 #endif
