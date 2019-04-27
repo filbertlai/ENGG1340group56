@@ -22,7 +22,7 @@ report.o: report.cpp report.h
 search.o: search.cpp search.h
   g++ -c search.cpp
 
-interface.o: main.o budget.o category.o delete.o edit.o report.o search.o add.o
+interface: main.o budget.o category.o delete.o edit.o report.o search.o add.o
   g++ -c main.o budget.o category.o delete.o edit.o report.o search.o add.o -o interface
   
 run:
