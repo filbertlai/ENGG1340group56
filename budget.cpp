@@ -17,8 +17,16 @@ int budget()
     cout<<"Welcome to set your monthly budget!"<<endl;
     cout<<"The year of the budget plan: ";
     cin>>year;
+    while ((year > 3000) || (year < 1500)) {
+			cout << "Invalid year! Please input again. Year: ";
+			cin >> year;
+		}
     cout<<"The month of the budget plan: ";
     cin>>month;
+		while ((month > 12) || (month < 1)) {
+			cout << "Invalid month! Please input again. Month: ";
+			cin >> month;
+		}
     cout<<"The amount of budget of the month you inputted: ";
     cin>>budget;
     ofstream fout;
