@@ -85,6 +85,9 @@ void add() {
 			cout << "Invalid amount! Please input a positive number. Amount(in HKD $): ";
 			cin >> amount;
 		}
+		if (description == "0") {
+			description = "";
+		}
 		cout << endl;
 		if ((Month < 10) && (Day < 10)) {
 			fout << Year << " " << "0" << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
@@ -306,6 +309,9 @@ void add() {
 		}
 		cout << endl;
 		int v, f;
+		if (description == "0") {
+			description = "";
+		}
 		if ((Month < 10)&&(Day<10)) {
 			expense << Year << " " << "0" << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
 				<< " " << "$" << amount << endl;
