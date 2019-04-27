@@ -1,3 +1,4 @@
+#include "add.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -7,12 +8,14 @@ using namespace std;
 //input I/E, year, month, day, catergory, dsecription, amount
 //output the record to income.txt / expense.txt
 void add() {
+	//Choosing income or expense
 	cout << setfill('x') << setw(50) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
 		cout << "Income or Expense? Please type in I or E: ";
 		cin >> choice;
 	}
+	//For income
 	if (choice == "I") {
 		string catergories, description;
 		int Year, Month, Day, num_of_categories = 1;
@@ -40,6 +43,7 @@ void add() {
 			cout << "Invalid day! Please input again. Day:";
 			cin >> Day;
 		}
+		//Choosing category
 		cout << setfill('x') << setw(50) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Basic Salary" << endl;
@@ -85,10 +89,12 @@ void add() {
 			cout << "Invalid amount! Please input a positive number. Amount(in HKD $): ";
 			cin >> amount;
 		}
+		//if there are no description, input "" to the txt file instead of "0"
 		if (description == "0") {
 			description = "";
 		}
 		cout << endl;
+		//if month/day only have one digit, add a zero in front of the number
 		if ((Month < 10) && (Day < 10)) {
 			fout << Year << " " << "0" << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
 				<< " " << "$" << amount << endl;
@@ -324,12 +330,24 @@ void add() {
 			expense << Year << " " << Month << " " << "0" << Day << " " << "[" << catergories << "]" << " " << "(" << description << ")"
 				<< " " << "$" << amount << endl;
 		}
-		expense.close();
+		int sum = 0;
+		ifstream check;
+		check.open("expense.txt");
+		string line;
+		while (getline(check, line)) {
+			int pos_open = line.find('$') + 1;
+			sum += stoi(line.substr(pos_open));
+		}
+		check.close();
+		ifstream bud;
+		bud.open("budget.txt");
+		while (getline(bud, line)) {
+			int open = line.find('$') + 1;
+			int budget_from_plan = stoi(line.substr(open));
+			if (sum > budget_from_plan) {
+				cout << "Alert! You have exceed your budget!!" << endl;
+			}
+		}
+		bud.close();
 	}
-}
-
-int main(){
-    add();
-    cout<<"end"<<endl;
-    return 0;
 }
