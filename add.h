@@ -2,6 +2,5 @@
 #define _ADD_H
 
 void add();
-int budget();
 
 #endif
