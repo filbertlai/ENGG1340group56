@@ -10,11 +10,11 @@ Firstly, the app should be highly customizable, ranging from the data input to t
 
 Secondly, the program should be intelligent. This is the reason why the program automically notify the user when the expenses violate budget plan and anaylze the budget plan with some calculations. 
 
-Fourthly, user should be able to find out any specific records so the program allows user to view records of specific category or account as well as sorted by date or amount. The user can even search by keywords. 
+Thirdly, user should be able to find out any specific records so the program allows user to view records of specific category in income or expense. The user can even search by date, type, amount and description. 
 
-Fifthly, user should be able to view the data in detail. Thus, the program will report real-time balance after each addition of record. A complete statistic report will also be generated under request which includes monthly income and expenses, percentages of income and expenses of each category, the trend of monthly income, expenditures and assets. 
+Fourthly, user should be able to view the data in detail. Thus, a complete statistic report will be generated under request which includes monthly income and expenses, percentages of income and expenses of each category. 
 
-Lastly, the program should be able to help the user in achieveing some long-term plans or targets so the program allows user to preset some regular income or expenses. What is more, user can set a budget plan for the future.
+Lastly, the program should be able to help the user in achieveing some long-term plans or targets so the program allows user to preset set a budget plan for the future.
 
 **Features:**
 
@@ -36,12 +36,6 @@ Lastly, the program should be able to help the user in achieveing some long-term
 
 (Users can analyze their expenditures on different aspects, including date, type, and account. This can help users to coordinate their spending and have better money management)
 
-- **View records that are sorted by date and amount**
-
-(User can sort the records by date to view records in chronological order)
-
-(Amount can also be sorted to figure out some extreme records.)
-
 - **Search for specific record(s)**
 
 (User can search for the record by the amount, date, types and message so that they can find the record they want)
@@ -58,11 +52,6 @@ Lastly, the program should be able to help the user in achieveing some long-term
 
 (When the expenditure in the specific category exceed the budget plan, an automatical notification will be generated to remind the user to reduce expenditure in that category so that long-term financial plan can be maintained)
 
-- **Preset the regular income and expenses**
-
-(Users can preset regular income, such as working salary since it is constant in a period of time)
-
-(Users can also preset some daily expenditures as it might be constant in a period of time, such as the transportation expenses. Confirmation will be asked before recording)
 
 **Assumptions:**
 
