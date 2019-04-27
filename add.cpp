@@ -345,7 +345,9 @@ void add() {
 			int open = line.find('$') + 1;
 			int budget_from_plan = stoi(line.substr(open));
 			if (sum > budget_from_plan) {
-				cout << "Alert! You have exceed your budget!!" << endl;
+				cout << "****** ! ! ! ~~~ A L E R T ~~~ ! ! ! *****" << endl;
+				cout << "******Alert! You have exceed your budget!!******" << endl;
+				cout << "******You have EXCEED your budget!!******" << endl;
 			}
 		}
 		bud.close();
