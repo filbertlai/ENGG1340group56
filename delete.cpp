@@ -60,6 +60,7 @@ void delet() {
 		while (getline(temp2, finish)) {
 			result << finish << endl;
 		}
+		remove("tempi.txt");
 	}
 
 	//For expense:
@@ -108,5 +109,6 @@ void delet() {
 		while (getline(temp2, finish)) {
 			result << finish << endl;
 		}
+		remove("tempe.txt");
 	}
 }
