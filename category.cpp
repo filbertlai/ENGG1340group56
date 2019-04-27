@@ -1,8 +1,8 @@
+#include "category.h"
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <iomanip>
-#include "start.h"
 using namespace std;
 
 // show all the records for user to choose which record to delete
