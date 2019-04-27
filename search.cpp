@@ -42,7 +42,7 @@ int income_type()
 
 int expense_type()
 {
-    cout<<"01) Household"<<endl;
+    cout<<endl<<"01) Household"<<endl;
     cout<<"02) Household - Internet"<<endl;
     cout<<"03) Household - Phone"<<endl;
     cout<<"04) Household - Water"<<endl;
@@ -71,7 +71,7 @@ int expense_type()
     cout<<"27) Shopping - Cosmetics / Skin Care Products"<<endl<<endl;
     cout<<"28) Investment"<<endl<<endl;
     cout<<"29) Gifts"<<endl<<endl;
-    cout<<"30) Others"<<endl;
+    cout<<"30) Others"<<endl<<endl;
     cout<<"Please enter the number: ";
     cin>>method_of_searching;
     return method_of_searching;
@@ -109,6 +109,7 @@ int main()
         if (fin.fail())
         {
             cout<<"You have not made any record yet!"<<endl;
+            exit(1);
         }
         if (method_of_searching==1)
         {
@@ -116,6 +117,7 @@ int main()
             cin>>search;
             string line;
             int year;
+            cout<<"Start Searching: "<<endl;
             while(getline(fin,line))
             {
                 year=stoi(line.substr(0,4));
@@ -132,6 +134,7 @@ int main()
             cin>>search;
             string line;
             int month;
+            cout<<"Start Searching: "<<endl;
             while(getline(fin,line))
             {
                 month=stoi(line.substr(5,2));
@@ -148,6 +151,7 @@ int main()
             cin>>search;
             int day;
             string line;
+            cout<<"Start Searching: "<<endl;
             while(getline(fin,line))
             {
                 day=stoi(line.substr(8,2));
@@ -167,6 +171,7 @@ int main()
             cout<<"The day you want to search: ";
             cin>>search_2;
             string line;
+            cout<<"Start Searching: "<<endl;
             while(getline(fin,line))
             {
                 int year=stoi(line.substr(0,4));
@@ -181,4 +186,360 @@ int main()
             cout<<"End of Search!"<<endl;
             fin.close();
     }
+    
+    
+    
+    
+    
+    if (search_what==2)
+    {
+        int pos_open,pos_close;
+        if (income_or_expense==1)
+        {
+            string type;
+            method_of_searching=income_type();
+            if (method_of_searching==1)
+            {
+                type="BasicSalary";
+            }
+            else if (method_of_searching==2)
+            {
+                type="Bonus";
+            }
+            else if (method_of_searching==3)
+            {
+                type="Investment";
+            }
+            else if (method_of_searching==4)
+            {
+                type="PocketMoney";
+            }
+            else if (method_of_searching==5)
+            {
+                type="Gifts";
+            }
+            else if (method_of_searching==6)
+            {
+                type="LotteryPrizes";
+            }
+            ifstream fin;
+            fin.open("income.txt");
+            if (fin.fail())
+            {
+                cout<<"You have not made any record yet!"<<endl;
+                exit(1);
+            }
+            string line,str;
+            cout<<"Start Searching: "<<endl;
+            while (getline(fin,line))
+            {
+                pos_open=line.find('[')+1;
+                if (line.find('-')==-1)
+                {
+                    pos_close=line.find(']');
+                }
+                else
+                {
+                    pos_close=line.find('-');
+                }
+                str=line.substr(pos_open,pos_close-pos_open);
+                if (str==type)
+                {
+                    cout<<line<<endl;
+                }
+            }
+            cout<<"End of searching!"<<endl;
+            fin.close();
+        }
+        else if (income_or_expense=2)
+        {
+            string line,type;
+            method_of_searching=expense_type();
+            if (method_of_searching==1)
+            {
+                type="Household";
+            }
+            else if (method_of_searching==2)
+            {
+                type="Household-Internet";
+            }
+            else if (method_of_searching==3)
+            {
+                type="Household-Phone";
+            }
+            else if (method_of_searching==4)
+            {
+                type="Household-Water";
+            }
+            else if (method_of_searching==5)
+            {
+                type="Household-Electricity";
+            }
+            else if (method_of_searching==6)
+            {
+                type="Transport";
+            }
+            else if (method_of_searching==7)
+            {
+                type="Personalcare";
+            }
+            else if (method_of_searching==8)
+            {
+                type="Personalcare-Medical/Dental";
+            }
+            else if (method_of_searching==9)
+            {
+                type="Personalcare-Beauty/Fitness";
+            }
+            else if (method_of_searching==10)
+            {
+                type="Personalcare-Hairdressing";
+            }
+            else if (method_of_searching==11)
+            {
+                type="Food&Beverage";
+            }
+            else if (method_of_searching==12)
+            {
+                type="Food&Beverage-Breakfast";
+            }
+            else if (method_of_searching==13)
+            {
+                type="Food&Beverage-Lunch";
+            }
+            else if (method_of_searching==14)
+            {
+                type="Food&Beverage-Tea";
+            }
+            else if (method_of_searching==15)
+            {
+                type="Food&Beverage-Dinner";
+            }
+            else if (method_of_searching==16)
+            {
+                type="Food&Beverage-Snacks";
+            }
+            else if (method_of_searching==17)
+            {
+                type="Lifestyle";
+            }
+            else if (method_of_searching==18)
+            {
+                type="Lifestyle-Entertainments";
+            }
+            else if (method_of_searching==19)
+            {
+                type="Lifestyle-Celebrations";
+            }
+            else if (method_of_searching==20)
+            {
+                type="Lifestyle-Holiday";
+            }
+            else if (method_of_searching==21)
+            {
+                type="Lifestyle-InterestCall/Hobbies";
+            }
+            else if (method_of_searching==22)
+            {
+                type="Shopping";
+            }
+            else if (method_of_searching==23)
+            {
+                type="Shopping-HouseholdGoods";
+            }
+            else if (method_of_searching==24)
+            {
+                type="Shopping-HealthSupplements";
+            }
+            else if (method_of_searching==25)
+            {
+                type="Shopping-ElectricalAppliances";
+            }
+            else if (method_of_searching==26)
+            {
+                type="Shopping-Clothing/Footwear";
+            }
+            else if (method_of_searching==27)
+            {
+                type="Shopping-Cosmetics/SkincareProducts";
+            }
+            else if (method_of_searching==28)
+            {
+                type="Investment";
+            }
+            else if (method_of_searching==29)
+            {
+                type="Gifts";
+            }
+            else if (method_of_searching==30)
+            {
+                type="Others";
+            }
+            ifstream fin;
+            fin.open("expense.txt");
+            if (fin.fail())
+            {
+                cout<<"You have not made any record yet!"<<endl;
+                exit(1);
+            }
+            string str;
+            cout<<"Start Searching: "<<endl;
+            while (getline(fin,line))
+            {
+                pos_open=line.find('[')+1;
+                pos_close=line.find(']');
+                str=line.substr(pos_open,pos_close-pos_open);
+                if (str==type)
+                {
+                    cout<<line<<endl;
+                }
+                pos_close=line.find('-');
+                str=line.substr(pos_open,pos_close-pos_open);
+                if (str==type)
+                {
+                    cout<<line<<endl;
+                }
+            }
+            cout<<"End of searching!"<<endl;
+            fin.close();
+        }
+    }
+    
+    
+    
+    if (search_what==3)
+    {
+        method_of_searching=search_by_amount();
+        double num,up,low,n;
+        int pos_open,pos_close;
+        string line;
+        ifstream fin;
+        if (income_or_expense==1)
+        {
+            fin.open("income.txt");
+            if (fin.fail())
+            {
+                cout<<"You have not made any record yet!"<<endl;
+                exit(1);
+            }
+        }
+        else if (income_or_expense==2)
+        {
+            fin.open("expense.txt");
+            if (fin.fail())
+            {
+                cout<<"You have not made any record yet!"<<endl;
+                exit(1);
+            }
+        }
+        if (method_of_searching==1)
+        {
+            cout<<"The exact amount you want to search: ";
+            cin>>num;
+            while (getline(fin,line))
+            {
+                pos_open=line.find('$')+1;
+                n=stod(line.substr(pos_open));
+                if (n==num)
+                {
+                    cout<<line<<endl;
+                }
+                
+            }
+            
+        }
+        else if (method_of_searching==2)
+        {
+            cout<<"The upper limit of the amount you want to search: ";
+            cin>>up;
+            cout<<endl<<"The lower limit of the amount you want to search: ";
+            cin>>low;
+            while (getline(fin,line))
+            {
+                pos_open=line.find('$')+1;
+                n=stod(line.substr(pos_open));
+                if (n<up&&n>low)
+                {
+                    cout<<line<<endl;
+                }
+                
+            }
+        }
+        else if (method_of_searching==3)
+        {
+            cout<<"The upper limit of the amount you want to search: ";
+            cin>>up;
+            while (getline(fin,line))
+            {
+                pos_open=line.find('$')+1;
+                n=stod(line.substr(pos_open));
+                if (n<up)
+                {
+                    cout<<line<<endl;
+                }
+                
+            }
+        }
+        else if (method_of_searching==4)
+        {
+            cout<<endl<<"The lower limit of the amount you want to search: ";
+            cin>>low;
+            while (getline(fin,line))
+            {
+                pos_open=line.find('$')+1;
+                n=stod(line.substr(pos_open));
+                if (n>low)
+                {
+                    cout<<line<<endl;
+                }
+                
+            }
+        }
+    }
+    
+    
+    
+    if (search_what==4)
+    {
+        ifstream fin;
+        string search,line,str;
+        int pos_open,pos_close;
+        cout<<"The keyword(s) you want to search in description: ";
+        cin>>search;
+        if (income_or_expense==1)
+        {
+            fin.open("income.txt");
+            if (fin.fail())
+            {
+                cout<<"You have not made any record yet!"<<endl;
+                exit(1);
+            }
+        }
+        else if (income_or_expense==2)
+        {
+            fin.open("expense.txt");
+            if (fin.fail())
+            {
+                cout<<"You have not made any record yet!"<<endl;
+                exit(1);
+            }
+        }
+        
+        while (getline(fin,line))
+        {
+            pos_open=line.find('(')+1;
+            pos_close=line.find(')');
+            str=line.substr(pos_open,pos_close-pos_open);
+            for (int i=0;i<(str.length()-search.length()+1);i++)
+            {
+                if (search==str.substr(i,search.length()))
+                {
+                    cout<<line<<endl;
+                }
+            }
+        }
+        fin.close();
+        cout<<"End of searching!"<<endl;
+    }    
+    
 }
