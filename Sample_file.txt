@@ -1,1 +1,273 @@
-Sample input and output (Output is in the parentheses）:
+Sample input and output (Input is in the parentheses）:
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxx Welcome back to Accounting System! xxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+*******Changing the records of income or expense*******
+1)  Add a record
+2)  Delete a record
+3)  Edit a record
+
+****Looking for specific record(s)/statistic report****
+4)  View records of specific category or account
+5)  Search for specific record(s)
+6)  Show Statistic report of financial state
+
+*****************Preset budget/records*****************
+7)  Set a budget for the next month
+
+Please enter the number of command: 
+
+-------------------------------------------------------------------------------------------------------
+Function 1 - Adding an income record:
+
+>>>Enter: 1
+
+Please enter the number of command: 1
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: 
+
+>>Enter: I
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: I
+Year: 
+
+>>Enter: 2018
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: I
+Year: 2018
+Month:
+
+>>Enter: 7
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: I
+Year: 2018
+Month: 7
+Day:
+
+>>Enter: 28
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: I
+Year: 2018
+Month: 7
+Day: 28
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Please choose the catergory from the below choices:
+1.Basic Salary
+2.Bonus
+3.Investment
+4.Pocket Money
+5.Gifts
+6.Lottery prizes
+Please indicate your choice in 1-6:
+
+>>Enter: 1
+
+Please indicate your choice in 1-6: 1
+Description(if no description, please press 0): 
+
+>>Enter: 0
+
+Description(if no description, please press 0): 0
+Amount (in HKD $): 
+
+>>Enter: 12
+
+Amount (in HKD $): 12
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxx Welcome back to Accounting System! xxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+*******Changing the records of income or expense*******
+1)  Add a record
+2)  Delete a record
+3)  Edit a record
+
+****Looking for specific record(s)/statistic report****
+4)  View records of specific category or account
+5)  Search for specific record(s)
+6)  Show Statistic report of financial state
+
+*****************Preset budget/records*****************
+7)  Set a budget for the next month
+
+Please enter the number of command: 
+
+-------------------------------------------------------------------------------------------------------
+Function 1 - Adding an expense record:
+
+>>>Enter: 1
+
+Please enter the number of command: 1
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: 
+
+>>Enter: E
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: E
+Year: 
+
+>>Enter: 2018
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: E
+Year: 2018
+Month:
+
+>>Enter: 9
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: E
+Year: 2018
+Month: 9
+Day:
+
+>>Enter: 28
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: E
+Year: 2018
+Month: 9
+Day: 28
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Please choose the catergory from the below choices:
+1.Household
+2.Transport
+3.Personal care
+4.Food & Beverage
+5.Lifestyle
+6.Shopping
+7.Investment
+8.Gifts
+9.Others
+Please indicate your choice in 1-9:
+
+>>Enter: 3
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Please choose the catergory from the below choices:
+a)Medical/Dental
+b)Beauty/Fitness
+c)Hairdressing
+Please indicate your choice in a-c:
+
+>>Enter: a
+
+Please indicate your choice in a-c: a
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Description(if no description, please press 0):
+
+>>Enter: new
+
+Description(if no description, please press 0): new
+Amount (in HKD $): 
+
+>>Enter: 34
+
+Amount (in HKD $): 34
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxx Welcome back to Accounting System! xxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+*******Changing the records of income or expense*******
+1)  Add a record
+2)  Delete a record
+3)  Edit a record
+
+****Looking for specific record(s)/statistic report****
+4)  View records of specific category or account
+5)  Search for specific record(s)
+6)  Show Statistic report of financial state
+
+*****************Preset budget/records*****************
+7)  Set a budget for the next month
+
+Please enter the number of command: 
+
+-------------------------------------------------------------------------------------------------------
+Function 2 - Deleting record:
+
+>>Enter: 2
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: 
+
+>>Enter: I
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: I
+1. 2019 07 28 [BasicSalary] () $12
+Please type in the line number that you would like to delete:
+
+>>Enter: 1
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxx Welcome back to Accounting System! xxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+*******Changing the records of income or expense*******
+1)  Add a record
+2)  Delete a record
+3)  Edit a record
+
+****Looking for specific record(s)/statistic report****
+4)  View records of specific category or account
+5)  Search for specific record(s)
+6)  Show Statistic report of financial state
+
+*****************Preset budget/records*****************
+7)  Set a budget for the next month
+
+Please enter the number of command: 
+
+-------------------------------------------------------------------------------------------------------
+Function 3 - Editing record:
+
+>>Enter: 3
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: 
+
+>>Enter: E
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Income or Expense? Please type in I or E: E
+1. 2018 09 28 [Personalcare-Medical/Dental] (new) $34
+Please type in the line number that you would like to edit:
+
+>>Enter: 1
+
+Please type in the line number that you would like to edit: 1
+Corrected year:
+
+>>Enter: 2018
+
+Please type in the line number that you would like to edit: 1
+Corrected year:2018
+Corrected month:
+
+>>Enter: 4
+
+Please type in the line number that you would like to edit: 1
+Corrected year: 2018
+Corrected month: 4
+Corrected day:
+
+>>Enter: 27
+
+Please type in the line number that you would like to edit: 1
+Corrected year: 2018
+Corrected month: 4
+Corrected day: 27
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Please choose the catergory from the below choices:
+.....
