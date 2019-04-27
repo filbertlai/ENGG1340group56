@@ -9,7 +9,7 @@ using namespace std;
 //input corrected year, month, day, catergory, dsecription, amount
 //output the corrected record to income.txt / expense.txt
 void edit() {
-	cout << setfill('x') << setw(50) << "x" << endl;
+	cout << setfill('x') << setw(56) << "x" << endl;
 	string choice = "A";
 	while (choice != "I" && choice != "E") {
 		cout << "Income or Expense? Please type in I or E: ";
@@ -49,7 +49,7 @@ void edit() {
 			cout << "Invalid day! Please input again. Corrected Day: ";
 			cin >> Day;
 		}
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		cout << "Please choose the catergory from the below choices:" << endl;
 		cout << "1.Basic Salary" << endl;
 		cout << "2.Bonus" << endl;
@@ -180,7 +180,7 @@ void edit() {
 		char type;
 		switch (num_of_categories) {
 		case 1:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Internet" << endl;
 			cout << "b)Mobile phone" << endl;
@@ -209,7 +209,7 @@ void edit() {
 			catergories = "Transport";
 			break;
 		case 3:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Medical/Dental" << endl;
 			cout << "b)Beauty/Fitness" << endl;
@@ -231,7 +231,7 @@ void edit() {
 			}
 			break;
 		case 4:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Breakfast" << endl;
 			cout << "b)Lunch" << endl;
@@ -261,7 +261,7 @@ void edit() {
 			}
 			break;
 		case 5:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Entertainments" << endl;
 			cout << "b)Celebrations" << endl;
@@ -287,7 +287,7 @@ void edit() {
 			}
 			break;
 		case 6:
-			cout << setfill('x') << setw(50) << "x" << endl;
+			cout << setfill('x') << setw(56) << "x" << endl;
 			cout << "Please choose the catergory from the below choices:" << endl;
 			cout << "a)Household goods" << endl;
 			cout << "b)Health supplements" << endl;
@@ -326,7 +326,7 @@ void edit() {
 			catergories = "Others";
 			break;
 		}
-		cout << setfill('x') << setw(50) << "x" << endl;
+		cout << setfill('x') << setw(56) << "x" << endl;
 		cout << " dorrectedDescription (if no description, please press 0) :";
 		cin >> description;
 		cout << "Corrected amount(in HKD $):";
