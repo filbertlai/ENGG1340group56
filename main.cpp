@@ -1,7 +1,14 @@
+#include "add.h"
+#include "delete.h"
+#include "edit.h"
+#include "category.h"
+#include "budget.h"
+#include "report.h"
+#include "search.h"
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include "start.h"
+
 using namespace std;
 
 int main()
@@ -28,32 +35,23 @@ int main()
         cout<<endl<<"*****************Preset budget/records*****************"<<endl;
         cout<<"8)  Set a budget for the next month"<<endl;
         cout<<"11) Preset the regular income or expenses"<<endl;
-        cout<<endl<<"************************Setting************************"<<endl;
-        cout<<"9)  Editing password"<<endl;
-        cout<<"10) Customize style"<<endl;
         cout<<endl<<"Please enter the number of command: ";
         cin>>cmd;
         if (cmd==1){add();}
         
-        else if (cmd==2){}
+        else if (cmd==2) {delet(); }
         
-        else if (cmd==3){}
+        else if (cmd==3){ edit(); }
         
-        else if (cmd==4){}
+		else if (cmd == 4) { category(); }
         
-        else if (cmd==5){}
+		else if (cmd == 5) { }
         
-        else if (cmd==6){}
+		else if (cmd == 6){searchh(); }
         
-        else if (cmd==7){}
+		else if (cmd == 7) { report(); }
         
-        else if (cmd==8){}
-        
-        else if (cmd==9){}
-        
-        else if (cmd==10){}
-    
-    
+		else if (cmd == 8) { budget(); }
     }
     return 0;
 }
